@@ -1,0 +1,377 @@
+.signupcontainer {
+   display: grid;
+   grid-template-columns: [col] 50% [col] 50% [col] 20% [col];
+   grid-template-rows: [row] 20% [row] 20% [row] 80% [row];
+   grid-gap: 10px;
+}
+
+.signuptopleft {
+    grid-column-start: col 1;
+   grid-column-end: col 2;
+   grid-row-start: row 1;
+   grid-row-end: row 2;
+   font-size: 25px;
+   color:red;
+   text-align:left;
+}
+.signuptitle {
+   grid-column-start: col 1;
+   grid-column-end: col 2;
+   grid-row-start: row 2;
+   grid-row-end: row 3;
+   font-size: 40px;
+   color:red;
+   text-align:left;
+}
+
+.signupform {
+   grid-column-start: col 1;
+   grid-column-end: col 2;
+   grid-row-start: row 3;
+   grid-row-end: row 4;
+   font-size: 20px;
+   color:red;
+    text-align:left;
+}
+
+.signuptopright {
+   grid-column-start: col 2;
+   grid-column-end: col 3;
+   grid-row-start: row 1;
+   grid-row-end: row 2;
+   font-size: 25px;
+   color:red;
+   text-align:left;
+
+}
+.logintitle {
+   grid-column-start: col 2;
+   grid-column-end: col 3;
+   grid-row-start: row 2;
+   grid-row-end: row 3;
+   font-size: 40px;
+   color:red;
+   text-align:left;
+}
+.loginform {
+   grid-column-start: col 2;
+   grid-column-end: col 3;
+   grid-row-start: row 3;
+   grid-row-end: row 4;
+   font-size: 20px;
+   color:red;
+    text-align:left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.infocontainer {
+ display: grid;
+ grid-template-columns: [col] 50% [col] 50% [col];
+ grid-template-rows: [row] 20% [row] 20% [row] 20% [row] 20% [row] 20% [row] 20% row] 20% [row] 20% [row];
+ grid-gap: 10px;
+}
+
+.infotitle{
+   grid-column-start: col 1;
+   grid-column-end: col 3;
+   grid-row-start: row 1;
+   grid-row-end: row 2;
+   font-size: 40px;
+   color:red;
+   font-family: helvetica;
+   text-align: center;
+   background-color:#CCCCCCCC;
+}
+
+h3 {
+   position: relative;
+   left: -30px;
+   font-size: 30px;
+}
+
+.button2 {
+  background-color: #CCCCCCCC;
+  color:white;
+  position: relative;
+  left: 200px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.trailer {
+   grid-column-start: col 1;
+   grid-column-end: col 2;
+   grid-row-start: row 2;
+   grid-row-end: row 3;
+   padding-left:50px;
+   text-align:left;
+}
+.about {
+   grid-column-start: col 2;
+   grid-column-end: col 3;
+   grid-row-start: row 2;
+   grid-row-end: row 3;
+   text-align:left;
+   margin-left:50px;
+}
+
+#cast {
+   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+   border-collapse: collapse;
+   width: 20%;
+   text-align:left;
+}
+
+#cast td, #cast th {
+  border: 1px solid #99999999;
+  padding: 8px;
+}
+#cast th {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+  background-color: #1BE31B;
+  color: white;
+}
+
+.reviews {
+   grid-column-start: col 1;
+   grid-column-end: col 3;
+   grid-row-start: row 6;
+   grid-row-end: row 7;
+  
+}
+
+.reviewspacing{
+  padding-left:60px;
+  font-size: 30px;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+.accordionposition {
+   position:relative;
+   left: 200px;
+}
+
+.writebutton {
+   position:relative;
+   left: 5%;
+}
+
+.reviewbox
+{
+   position: relative;
+   left: 5%;
+   width: 30%;
+   border: 1px solid #99999999;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+   display: grid;
+   grid-template-columns: [col] 5% [col] 25% [col] 25% [col] 25% [col] 20% [column-end];
+   grid-template-rows: [row] 100px [row] 60px [row] 500px [row] 500px [row] 70px [almost] 200px [lastline];
+   grid-gap: 10px;
+}
+
+body {
+    background-color: #E3E3E3;
+    overflow-x: hidden;
+}
+
+h1{
+   grid-column-start:col 2;
+   grid-column-end: col 5;
+   grid-row-start: row 1;
+   grid-row-end: row 2;
+   text-align:center;
+}
+
+.title {
+   grid-column-start:col 2;
+   grid-column-end: col 5;
+   grid-row-start: row 1;
+   grid-row-end: row 2;
+   background-image: url("./title.jpg") ;
+   background-size: contain;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;  
+  font-weight: bold;
+  font-size: 70px;
+  font-family: helvetica;
+  text-align: center;
+}
+
+.lefttop
+{
+   grid-column-start:col 1;
+   grid-column-end: col 2;
+   grid-row-start: row 1;
+   grid-row-end: row 2;
+   background-color: #99999999;
+}
+.button1 {
+  background-color: #CCCCCCCC;
+  color:white;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+.signin
+{
+   grid-column-start: col 5;
+   grid-column-end: column-end;
+   grid-row-start: row 1;
+   grid-row-end: row 2;
+   font-size: 40px;
+   text-align: center;
+   background-color: #99999999;
+}
+
+
+.latest
+{
+   
+   grid-column-start: col 2;
+   grid-column-end: col 5;
+   grid-row-start: row 2;
+   grid-row-end: row 3;
+   margin: 30px;
+   font-size: 30px;
+   font-family: arial;
+}
+.moviesidebar
+{
+   background-color: #E3E3E3;
+   grid-column-start: col 1;
+   grid-column-end: col 2;
+   grid-row-start: row 2;
+   grid-row-end: lastline;
+}
+.moviesidebar2
+{
+   background-color: #E3E3E3;
+   grid-column-start: col 5;
+   grid-column-end: column-end;
+   grid-row-start: row 2;
+   grid-row-end: lastline;
+}
+
+.movie {
+   text-align: center;
+   font-size: 35px;
+}
+
+.starwars {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  cursor:pointer;
+}
+
+.movie1 {
+   display:inline-block;
+   grid-column-start: col 2;
+   grid-column-end: col 3;
+   grid-row-start: row 3;
+   grid-row-end: row 4;
+   background-color: #CCCCCCCC;
+}
+
+.movie2 {
+   display:inline-block;
+   grid-column-start: col 3;
+   grid-column-end: col 4;
+   grid-row-start: row 3;
+   grid-row-end: row 4;
+   background-color: #CCCCCCCC;
+}
+
+.movie3 {
+   display:inline-block;
+   grid-column-start: col 4;
+   grid-column-end: col 5;
+   grid-row-start: row 3;
+   grid-row-end: row 4;
+   background-color: #CCCCCCCC;
+}
+.movie4 {
+   display:inline-block;
+   grid-column-start: col 2;
+   grid-column-end: col 3;
+   grid-row-start: row 4;
+   grid-row-end: row 5;
+   background-color: #CCCCCCCC;
+}
+
+.movie5 {
+   display:inline-block;
+   grid-column-start: col 3;
+   grid-column-end: col 4;
+   grid-row-start: row 4;
+   grid-row-end: row 5;
+   background-color: #CCCCCCCC;
+}
+
+.movie6 {
+   display:inline-block;
+   grid-column-start: col 4;
+   grid-column-end: col 5;
+   grid-row-start: row 4;
+   grid-row-end: row 5;
+   background-color: #CCCCCCCC;
+}
+
+
+
+
+.movierating {
+   margin-left: 50px;
+   font-size: 20px;
+}
+
+.checked {
+   color:orange;
+}
+
+.moviereviews {
+   margin-left: 50px;
+   font-size: 20px;
+}
