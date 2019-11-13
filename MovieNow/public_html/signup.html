@@ -50,7 +50,7 @@ This is an example from the website I am building in cs215. I can provide the Ja
   <tr><td></td><td><label id="passwordconfirm_msg" class="err_msg"></label></td></tr> 
  	<tr><td>Confirm Password: </td><td> <input type="password" id= "confirmpassword" size="30" /></td></tr>   
 </table>
-    <div><a id="btnSave" class="button1" >Sign Up</a></div> 
+    <div><a id="btnSignUp" class="button1" >Sign Up</a></div> 
 <input type="reset" id="btnReset" value="Reset"/>
  <label id="signupsuccess_msg" class="success_msg"></label>
 </form>  
@@ -68,10 +68,11 @@ Already have an account? Log in below.
    <form id= "Login" method="post">
     <table>
     <tr><td></td><td><label id="emailLog_msg" class="err_msg"></label></td></tr>
-    <tr><td>Email: </td><td> <input type="text" size="30" /></td></tr>
+    <tr><td>Username: </td><td> <input type="text" id="usernameLog" size="30" /></td></tr>
     <tr><td></td><td><label id="passwordLog_msg" class="err_msg"></label></td></tr> 
-   	<tr><td>Password: </td><td> <input type="password" size="30" /></td></tr>  
+   	<tr><td>Password: </td><td> <input type="password" id="passwordLog" size="30" /></td></tr>  
     </table>
+       <div><a id="btnLogin" class="button1" >Sign Up</a></div> 
     <br>
     <!-- Currently doesnt send home until proven true.. Ill add the javascript for this page later
      <input type="submit"  value="Log In" onclick="window.location.href = 'home.html';" /> -->
