@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" type="text/css" href="css/webpage.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <title>Maleficent: Mistress of Evil</title>
+ <script src = "homepage.js" ></script>
+ 
+ 
+</head>
+
+<body>
+
+<div class="infocontainer">
+<div class="infotitle"> <b>Maleficent: Mistress of Evil</b> <input type="button" class="button button2" onclick="window.location.href = 'home.html';" value="To Homepage"/> </div>
+
+<div class = "trailer"><iframe width= 100% height= 100%  src="https://www.youtube.com/embed/n0OFH4xpPr4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<div class ="about"><h3><u>Cast:</u></h3>
+<table id="cast">
+<tr>
+  <th><b>Actor</b></th>
+  <th><b>Starring as</b></th>
+</tr>
+  <tr>
+  <td>Angelina Jolie</td>
+  <td>Maleficent</td>
+  </tr>
+  <tr>
+  <td>Elle Fanning</td>
+  <td>Aurora</td>
+  </tr>
+  <tr>
+  <td>Harris Dickinson</td>
+  <td>Prince Phillip</td>
+  </tr>
+  <tr>
+  <td>Michelle Pfeiffer</td>
+  <td>Queen Ingrith</td>
+  </tr>
+  </table>
+</div>
+
+
+<div class="reviews">
+<p class="reviewspacing"><u>Average Rating:</u>  <span class = "fa fa-star checked"></span><span class = "fa fa-star checked"></span><span class = "fa fa-star checked"></span><span class = "fa fa-star checked"></span><span class = "fa fa-star"></span></p>
+<!--//Will have to add JavaScript to the accordion.
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+--->
+<p class="reviewspacing"><u>Reviews:</u> <button class="accordion accordionposition">Sort</button><div class="panel">
+  <p>Lorem ipsum...</p>
+</div></p>
+
+<div class="reviewbox">
+    <p><b>Review by Kaden:</b> <span class = "fa fa-star checked"></span><span class = "fa fa-star checked"></span><span class = "fa fa-star checked"></span><span class = "fa fa-star checked"></span><span class = "fa fa-star"></span> </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <input type="button" class="button"  value="Rate Review"/>
+</div>
+
+<!--If we stick with this implementation to "write" reviews we will need to personalize this button with js/php.
+-->
+<br>
+<!-- https://bootsnipp.com/snippets/PjPa Something like this when this button is pressed?? -->
+<input type="button" class="button writebutton" onclick="window.location.href = 'writereview.html';" value="Write Review"/>
+</div>
+
+</div>
+
+</body>
+</html>

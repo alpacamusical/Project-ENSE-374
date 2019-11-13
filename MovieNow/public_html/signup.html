@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" type="text/css" href="css/webpage.css" />
+ <title>Signup</title>
+ <script src = "js/signup.js" ></script>
+ 
+ 
+</head>
+
+<body>
+
+<div class="infocontainer">
+
+<div class="signuptopleft">
+Don't have an account yet? Create one below!
+</div>
+
+
+<div class="signuptitle">
+    <h4>Sign Up</h4>
+</div>
+
+<div class= "signupform">
+<!--
+This is an example from the website I am building in cs215. I can provide the Javascript code for this later. profile picture is not neccessary for us I think....
+
+-->
+<form id= "SignUp" method="post">
+<table>
+<tr><td></td><td><label id="email_msg" class="err_msg"></label></td></tr>
+ 	<tr><td>Email: </td><td> <input type="text" id="email" size="30" /></td></tr>
+  
+  <tr><td></td><td><label id="profilepicture_msg" class="err_msg"></label></td></tr>
+ <tr><td>Profile Picture: </td><td> <input id="image" type="file"> </td></tr>
+ 
+   <tr><td></td><td><label id="firstname_msg" class="err_msg"></label></td></tr>
+  <tr><td>First Name: </td><td> <input type="text" id="firstname" size="30" /></td></tr>
+  
+  <tr><td></td><td><label id="lastname_msg" class="err_msg"></label></td></tr>
+ 	<tr><td>Last Name </td><td> <input type="text" id="lastname" size="30" /></td></tr>
+  
+  <tr><td></td><td><label id="username_msg" class="err_msg"></label></td></tr>    
+ 	<tr><td>Username: </td><td> <input type="text" id="username" size="30" /></td></tr>
+  
+   <tr><td></td><td><label id="password_msg" class="err_msg"></label></td></tr> 
+ 	<tr><td>Password: </td><td> <input type="password" id="password" size="30" /></td></tr>   
+  
+  <tr><td></td><td><label id="passwordconfirm_msg" class="err_msg"></label></td></tr> 
+ 	<tr><td>Confirm Password: </td><td> <input type="password" id= "confirmpassword" size="30" /></td></tr>   
+</table>
+    <div><a id="btnSave" class="button1" >Sign Up</a></div> 
+<input type="reset" id="btnReset" value="Reset"/>
+ <label id="signupsuccess_msg" class="success_msg"></label>
+</form>  
+</div>
+
+<div class="signuptopright">
+Already have an account? Log in below.
+</div>
+
+<div class="logintitle">
+    <h4>Log In</h4>
+</div>
+
+<div class="loginform">
+   <form id= "Login" method="post">
+    <table>
+    <tr><td></td><td><label id="emailLog_msg" class="err_msg"></label></td></tr>
+    <tr><td>Email: </td><td> <input type="text" size="30" /></td></tr>
+    <tr><td></td><td><label id="passwordLog_msg" class="err_msg"></label></td></tr> 
+   	<tr><td>Password: </td><td> <input type="password" size="30" /></td></tr>  
+    </table>
+    <br>
+    <!-- Currently doesnt send home until proven true.. Ill add the javascript for this page later
+     <input type="submit"  value="Log In" onclick="window.location.href = 'home.html';" /> -->
+     <br>
+     <br>
+     <br>
+    <a href='home.html'>Go back to home.</a>
+ </div>
+
+
+</div>
+</body>
