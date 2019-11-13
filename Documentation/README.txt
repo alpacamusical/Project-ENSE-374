@@ -1,1 +1,1 @@
-This is our first commit of the project
+Milestone 3.
