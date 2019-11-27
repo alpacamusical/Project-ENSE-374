@@ -1,0 +1,226 @@
+
+/* Create three equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 60%;
+  padding: 5px;
+ background-color: hsl(0,0%,66%);
+}
+
+.logoutbutton {
+   padding-left: 10%;
+}
+.ratetext {
+    padding-left: 40px;
+}
+.MOVIE{
+   padding-left: 25px;
+   font-size: 30px;
+}
+
+
+h5
+{
+   font-size: 15px;
+}
+.signupbuttons {
+   padding-left: 30%;
+}
+.loginbutton {
+  padding-top: 1%;
+  padding-left: 30%;
+}
+
+.textarea{
+   resize: none;
+   height: 20px;
+   position: absolute;
+   top: 229px;
+   left: 150px;
+}
+
+.charswatch{
+  position: absolute;
+   top: 229px;
+   left: 320px;
+}
+
+.err_msg {
+   color:red;
+}
+
+.success_msg {
+   color:green;
+}
+
+.right {
+  text-align: right;
+}
+
+.watchlistbutton
+{
+   position: absolute;
+   top: 200px;
+   right: 420px;
+}
+
+.searchbar {
+   position: absolute;
+   top: 160px;
+   right: 300px; 
+}
+
+.login1
+{
+   position: absolute;
+   top: 50px;
+   right: 3px;  
+}
+
+.login2
+{
+   position: absolute;
+   top: 80px;
+   right: 0px;  
+}
+
+.login3
+{
+   position: absolute;
+   top: 120px;
+   right: 140px;  
+}
+
+
+.signup1
+{
+   position: absolute;
+   top: 120px;
+   right: 30px;   
+}
+
+.signin1
+{
+   position: absolute;
+   top: 0;
+   right: 0;  
+}
+
+
+.signup
+{
+float: right;
+ padding-left: 40em;
+   text-align: right;
+   
+}
+
+.column2 {
+  float: left;
+  width: 32%;
+  padding: 5px;
+ background-color: darkgray;
+}
+
+
+.column4{
+   
+   width: 40%;
+   background-color: darkgray;
+   margin-left: 325px;
+   margin-right: 100px;
+}
+
+.moviedetail{
+   margin-left: 100px;
+   margin-right: 100px;
+}
+
+
+td img
+{
+  
+    margin-left: 30px;
+    margin-right: 30px;  
+}
+
+td
+{
+   text-align: center;
+}
+
+.column3
+ {
+ float:left;
+  width: 25%;
+  background-color: darkgray;
+}
+
+.column5
+ {
+  float: left;
+  width: 50%;
+  padding: 5px;
+ background-color: darkgray;
+}
+
+p1
+{
+
+   padding: 200px;
+}
+
+p2
+{
+
+   padding: 200px;
+}
+
+/* Need java script for Accordions will implement in Assignment 3. */
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 10%;
+  text-align: left;
+  border-style: solid;
+  outline: none;
+  transition: 0.4s;
+}
+
+
+
+
+li {
+    display: inline;
+    padding: 5px;
+}
+
+a
+{
+   color: green;
+}
+body
+{
+   
+   background-color: gainsboro;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  
+   color: green;
+  
+}
+
+h4 {
+margin-left: 350px;
+   color: red;
+   font-size: 25px;
+}

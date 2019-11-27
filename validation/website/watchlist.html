@@ -1,0 +1,88 @@
+<?php 
+session_start();
+ ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Watchlist</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" type="text/css" href="webpage.css" />
+ <script src = "watchlist.js" ></script>
+</head>
+<body>
+
+ <header>
+ <?php 
+    echo "<img src=\"posters/riders.jpg\" width=\"100\" height=\"60\" alt=\"Riders\"/>  <h1>Kadens Movie Database - Homepage</h1>";
+ if(isset($_SESSION["uid"])) {
+ 
+  $uid = $_SESSION["uid"];
+  $avatar = $_SESSION["avatar"]; 
+  $username = $_SESSION["username"];
+ echo "<div class =\"signin1\"><h5>Welcome back $username</h5><img src=\"avatars/$avatar\" width=\"100\" height=\"100\" alt=\"Riders\"/> <br> <input  type=\"button\" onclick=\"window.location.href = 'logout.php';\" value=\"Log Out\"/> </div>";
+ 
+ }
+ else
+  {
+  echo "<div class = \"login3\"><input type=\"button\" onclick=\"window.location.href = 'login.php';\" value=\"Log In\"/></div>";
+  echo "<div class = \"signup1\"><input type=\"button\" onclick=\"window.location.href = 'signup.php';\" value=\"Sign Up\"/></div>";
+  }
+    ?>
+   <img src="riders.jpg" width="100" height="60" alt="Riders">  <h1>Kaden's Movie Database - Watchlist</h1> 
+ 
+  
+    </header>
+    
+  
+    <p><input type="button" onclick="window.location.href = 'watchlistdetails.html';" value="Go to Watchlist Details Page"/></p>
+    <p><input type="button" onclick="window.location.href = 'homepage.html';" value="Go to Home Page"/></p>
+    <form id= "Watchlist" method="post"><input type="submit" value="Create Watchlist"/><textarea id="watchlistcreate" onkeyup="dynamiccharcount(this.value)"></textarea><span id=charsleft class="charswatch"></span></form>
+    <div class="row"> <h2>Your Watchlists:</h2> </div>
+    
+  <div class="column3">
+    <table>
+<tbody>
+ <tr><td><a href="watchlistdetails.html"><h1>Watchlist #1:</h1></a></td></tr>
+ <tr><td>Star Wars: Rogue One</td></tr>
+   <tr><td>Avengers: Endgame</td></tr>
+    <tr><td>Money Ball</td></tr>
+     <tr><td>Star Wars: The Last Jedi</td></tr>
+ 	<tr><td><input type="button" value="Delete Watchlist"/> </td></tr>
+    	
+  </tbody>
+</table>
+  </div>
+  
+<div class="column3">
+    <table>
+<tbody>
+ <tr><td><a href="watchlistdetails.html"><h1>Watchlist #2:</h1></a></td></tr>
+ <tr><td>Star Wars: Rogue One</td></tr>
+   <tr><td>Avengers: Endgame</td></tr>
+    <tr><td>Money Ball</td></tr>
+     <tr><td>Star Wars: The Last Jedi</td></tr>
+ 
+ 	<tr><td><input type="button" value="Delete Watchlist"/> </td></tr>
+    	
+  </tbody>
+</table>
+  </div>
+  
+  <div class="column3">
+    <table>
+<tbody>
+ <tr><td><a href="watchlistdetails.html"><h1>Watchlist #3:</h1></a></td></tr>
+  <tr><td>Star Wars: Rogue One</td></tr>
+   <tr><td>Avengers: Endgame</td></tr>
+    <tr><td>Money Ball</td></tr>
+     <tr><td>Star Wars: The Last Jedi</td></tr>
+ 	<tr><td><input type="button" value="Delete Watchlist"/> </td></tr>
+    	
+  </tbody>
+</table>
+  </div>
+  
+ <script src = "watchlist-r.js" ></script>
+</body>
+</html>
