@@ -1,0 +1,6 @@
+INSERT INTO 374movies (title,dateReleased,poster,youtube_link,cast,director,rating) VALUES ("Parasite",'2019-05-30', 'parasite.jpg', 'https://www.youtube.com/embed/isOGD_7hNIY','Kang-ho Song, Sun-Kyun Lee, Yeo-jeong Jo','Bong Joon-ho','5');
+
+Image for poster must be .jpg currently, resize image dimensions to 800x1200 to ensure css doesnt mess anything up.
+for good quality images go to imdb click on the poster there, then right click open image in new tab.
+youtube link is from youtube video -> share -> embed -> copy ONLY THE URL
+CHMOD 777 *.* in  ,poster folder, from HERCULES so image can be seen.
