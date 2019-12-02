@@ -3,6 +3,17 @@ function ajax_filter() {
   	   
   	   var sortby = document.getElementById("sortselection").value;
        // create a variable we need to send to our PHP file
+       //Change the title description at top of homepage.
+       if(sortby == "DateReleased"){
+           document.getElementById("homepageSortedTitle").innerHTML = "Newest Movies";
+			}
+		 if(sortby == "Rating"){
+           document.getElementById("homepageSortedTitle").innerHTML = "Top Rated Movies";
+			}
+		 if(sortby == "Title"){
+            document.getElementById("homepageSortedTitle").innerHTML = "Alphabetically Ordered Movies";
+			}
+			
        //create XMLHttpRequest object
        var  xmlhttp = new XMLHttpRequest();
        // access the onreadystatechange event for the XMLHttpRequest object

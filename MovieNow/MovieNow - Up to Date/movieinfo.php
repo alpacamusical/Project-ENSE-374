@@ -139,7 +139,7 @@ while($reviewRow = $reviewResult->fetch_assoc())
 		
 		echo"<p><b>Review by $userName:</b></p>";
       echo"";
-      echo"<p><u>Movie Rating</u>"; 
+      echo"<p>"; 
       echo"<p class =\"movierating\">Rating:";
        for ($counter = 0; $counter < $rating; $counter++)
        {
@@ -207,7 +207,8 @@ while($reviewRow = $reviewResult->fetch_assoc())
 <br>
 <br>
 
-<?php
+
+<?php //Write review box. Shows when button is clicked, only if user is logged in by button above.
 $user_id = $_SESSION["user_id"];
 echo"<h7><b> Write your Review below </b></h7>";
 echo"<form id=\"reviewForm\" method = \"post\" action=\"redirect.php\" enctype =\"multipart/form-data\">";

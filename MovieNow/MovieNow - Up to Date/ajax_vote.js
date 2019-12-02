@@ -26,14 +26,12 @@ function ajax_vote(event) {
             if (this.readyState == 4 && this.status == 200) {
                var display;
                var results = JSON.parse(this.responseText)
-
-               
-                   
+                 
                    if(results > 0)
                    {
                    	display = "Overall score is <b>"; display += results; display += "</b>. People liked this review.";
                    }
-                   else if(result == 0)
+                   else if(results == 0)
                    {
                    	display = "Overall score is <b>"; display += results; display += "</b>. This review is neutral.";
                    }

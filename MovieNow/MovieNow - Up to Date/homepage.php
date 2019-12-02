@@ -40,7 +40,7 @@ echo"<div class = \"signin\"><input type=\"button\" class=\"button button1\" onc
 ?>
 <div class= "moviesidebar"></div>
 <div class= "moviesidebar2" id="test"></div>
-<div class= "latest">Newest Movies  
+<div class= "latest" ><span id ="homepageSortedTitle">Newest Movies  </span>
 <select id="sortselection" name="sorted" onchange="ajax_filter()">
     <option value="Sort By">Sort By</option>
     <option value="DateReleased">Date Released</option>
