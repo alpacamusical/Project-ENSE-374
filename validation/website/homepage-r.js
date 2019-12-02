@@ -1,1 +1,0 @@
-document.getElementById("searchbar").addEventListener("submit",SearchBar,false);
